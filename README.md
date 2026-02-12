@@ -37,5 +37,4 @@ Pour vérifier :
 ```bash
 node -v
 npm -v
->>>>>>> e8cbf21c44748c95276013bb33e1919c51339430
-```
+
