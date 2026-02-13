@@ -63,7 +63,6 @@ const Footer = () => {
             </a>
           </li>
           <li>
-          <li>
             <a
               href="https://www.google.com"
               target="_blank"
@@ -72,6 +71,7 @@ const Footer = () => {
               <i className="fab fa-twitter"></i>
             </a>
           </li>
+          <li>
             <a
               href="https://www.google.com"
               target="_blank"
@@ -80,7 +80,6 @@ const Footer = () => {
               <i className="fab fa-linkedin"></i>
             </a>
           </li>
-
         </ul>
       </div>
     </div>
