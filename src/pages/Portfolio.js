@@ -1,9 +1,13 @@
 import React from 'react';
+import Navigation from '../components/Navigation';
+import Footer from "../components/Footer";
 
 const Portfolio = () => {
     return (
         <div>
-            c'est portfolio
+            <Navigation/>
+            <Footer/>
+            <p>Portfolio</p>
         </div>
     );
 };

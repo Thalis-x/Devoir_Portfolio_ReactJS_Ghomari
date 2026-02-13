@@ -1,9 +1,13 @@
 import React from 'react';
+import Navigation from '../components/Navigation';
+import Footer from "../components/Footer";
 
 const Contact = () => {
     return (
         <div>
-            hello depuis contact
+            <Navigation/>
+            <Footer/>
+            <p>Contact</p>
         </div>
     );
 };
