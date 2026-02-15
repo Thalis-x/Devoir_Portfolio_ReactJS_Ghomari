@@ -20,7 +20,7 @@ const Footer = () => {
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white me-3"
+                className="me-2"
               >
                 <i className="fab fa-github fa-lg"></i>
               </a>
@@ -28,7 +28,7 @@ const Footer = () => {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white me-3"
+                className="me-2"
               >
                 <i className="fab fa-twitter fa-lg"></i>
               </a>
@@ -36,7 +36,6 @@ const Footer = () => {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white"
               >
                 <i className="fab fa-linkedin fa-lg"></i>
               </a>
@@ -92,17 +91,17 @@ const Footer = () => {
             <h5 className="mb-3">Mes dernières réalisations</h5>
             <ul className="list-unstyled">
               <li className="mb-2">
-                <a href="#" className="text-white text-decoration-none">
+                <a href="https://www.google.com"  className="text-white text-decoration-none">
                   Fresh Food
                 </a>
               </li>
               <li className="mb-2">
-                <a href="#" className="text-white text-decoration-none">
+                <a href="https://www.google.com"  className="text-white text-decoration-none">
                   Restaurant Akira
                 </a>
               </li>
               <li className="mb-2">
-                <a href="#" className="text-white text-decoration-none">
+                <a href="https://www.google.com" className="text-white text-decoration-none">
                   Espace bien-être
                 </a>
               </li>
@@ -110,14 +109,14 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Copyright */}
+       {/* Copyright comment l'appliquer
         <div className="row mt-3">
           <div className="col text-center">
-            <p className="mb-0 text-muted">
+            <p className="mb-0">
               © 2024 John Doe. Tous droits réservés.
             </p>
           </div>
-        </div>
+        </div>  */}
       </div>
     </footer>
   );

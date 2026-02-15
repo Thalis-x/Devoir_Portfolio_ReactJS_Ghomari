@@ -21,7 +21,10 @@ body {
 }
 
 .nav-link:hover {
-  color: #eaedee !important;
+  color: #6267cd !important;
+   display: inline-block;
+  transition: transform 0.3s ease;
+  transform: translateY(-2px);
 }
 
 .nav-link.active {
@@ -65,10 +68,6 @@ section h2 {
 }
 
 /* Footer */
-footer {
-  border-top: 3px solid #0dcaf0;
-}
-
 footer h5 {
   font-weight: bold;
   margin-bottom: 1rem;
@@ -79,17 +78,20 @@ footer a {
 }
 
 footer a:hover {
-  color: #0dcaf0 !important;
+  color: #6267cd !important;
 }
 
 .social-icons a {
+  color:rgba(77, 80, 84, 0.85);
   display: inline-block;
   transition: transform 0.3s ease;
+  /* tailles des icones */
+  font-size: 20px;
 }
 
 .social-icons a:hover {
   transform: translateY(-3px);
-  color: #0dcaf0 !important;
+  color: #6267cd !important;
 }
 
 /* Responsive */
