@@ -96,7 +96,77 @@ footer a:hover {
   color: #ffffff !important;
 }
 
-/* Responsive */
+/* ============================================
+   PAGE SERVICES - AJOUT NOUVEAU
+============================================ */
+
+/* Hero Banner Services */
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Service Cards */
+.service-card {
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+/* Effet hover sur les cards - Fond #efefef + Ombre */
+.service-card:hover {
+  background-color: #efefef !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
+  transform: translateY(-5px);
+}
+
+/* Icônes des services */
+.service-icon {
+  transition: transform 0.3s ease;
+  
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1);
+}
+
+.service-card:hover .service-icon i {
+  color: #0d6efd !important;
+}
+
+/* Titres des cards */
+.service-card .card-title {
+  font-weight: bold;
+  color: #212529;
+}
+
+/* Texte des cards */
+.service-card .card-text {
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Section titre Services */
+.display-5 {
+  color: #212529;
+  font-weight: 700;
+}
+.card-body{
+  border: 1px solid rgba(92, 91, 91, 0.266);
+  border-radius: 5px;
+}
+
+
+/* ============================================
+   RESPONSIVE
+============================================ */
+
+@media (max-width: 991px) {
+  .service-card {
+    margin-bottom: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   body {
     padding-top: 56px;
@@ -110,3 +180,17 @@ footer a:hover {
     font-size: 1.5rem;
   }
 }
+ /* Services responsive mobile */
+  .hero-banner {
+    min-height: 20vh !important;
+  }
+  
+  .display-5 {
+    font-size: 2rem;
+  }
+  
+  .service-card .card-body {
+    padding: 2rem !important;
+  }
+
+

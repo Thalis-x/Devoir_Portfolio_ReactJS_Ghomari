@@ -14,8 +14,7 @@ const Services = () => {
           backgroundImage: 'url(/images/banner.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          minHeight: '30vh',
-          backgroundColor: '#1a2a4e',
+          minHeight: '100vh',
         }}
       >
         <div
