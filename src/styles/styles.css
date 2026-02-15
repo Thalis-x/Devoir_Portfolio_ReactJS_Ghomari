@@ -10,7 +10,6 @@ body {
 
 .navbar-brand {
   font-weight: bold;
-  font-size: 1.2rem;
 }
 
 .nav-link {
@@ -22,14 +21,16 @@ body {
 
 .nav-link:hover {
   color: #6267cd !important;
-   display: inline-block;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: underline ;
   transition: transform 0.3s ease;
   transform: translateY(-2px);
 }
 
 .nav-link.active {
   color: #ffffff !important;
-  text-decoration: underline ;
+  
   
 }
 
@@ -79,6 +80,7 @@ footer a {
 
 footer a:hover {
   color: #6267cd !important;
+  font-weight: bold;
 }
 
 .social-icons a {
@@ -91,7 +93,7 @@ footer a:hover {
 
 .social-icons a:hover {
   transform: translateY(-3px);
-  color: #6267cd !important;
+  color: #ffffff !important;
 }
 
 /* Responsive */
