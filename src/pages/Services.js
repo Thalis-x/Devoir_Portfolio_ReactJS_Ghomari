@@ -6,7 +6,7 @@ const Services = () => {
     return (
         <div>
             <Navigation/>
-            <Footer/>
+            
             <p>Services</p>
         </div>
     );
