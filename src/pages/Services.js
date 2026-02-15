@@ -14,7 +14,6 @@ const Services = () => {
           backgroundImage: 'url(/images/banner.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          minHeight: '100vh',
         }}
       >
         <div
@@ -37,15 +36,15 @@ const Services = () => {
               Voici les prestations sur lesquelles je peux intervenir
             </p>
             <div
-              className="mx-auto pb-2 border-bottom border-primary border-4 "
+              className="ligne mx-auto pb-2 border-bottom border-primary border-5 "
               //   Ligne Bleu qui souligne
-            //   Deux autres façons de faire la ligne, la deuxieme effet degradé.
+              //   Deux autres façons de faire la ligne, la deuxieme effet degradé.
               // backgroundColor: '#0d6efd', // couleur primaire Bootstrap
               // background: 'linear-gradient(to right, transparent, #0d6efd, transparent)'
-              style={{
-                width: '450px',
-                height: '3px',
-              }}
+            //   style={{
+            //     width: '450px',
+            //     height: '3px',
+            //   }}
             ></div>
           </div>
 
@@ -109,7 +108,6 @@ const Services = () => {
           </div>
         </div>
       </section>
-
       <Footer />
     </div>
   );
