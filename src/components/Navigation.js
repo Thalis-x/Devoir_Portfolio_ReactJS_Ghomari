@@ -3,49 +3,85 @@ import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
   return (
-    <div className="sidebar">
-      <div className="id">
-        <div className="idContent">
-          <img src="/images/favicon.png" alt="profil-pic" />
-          <h3>John Doe</h3>
-        </div>
-      </div>
+    <>
+      {/* Navigation Desktop - visible uniquement sur écrans moyens et plus */}
+      <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div className="container-fluid">
+          <NavLink className="navbar-brand" to="/">
+            JOHN DOE
+          </NavLink>
+          
+          {/* Bouton burger pour mobile */}
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
 
-      <div className="navigation">
-        <ul>
-          <li>
-            <NavLink to="/" activeClassName="navActive">
-              <i className="fas fa-home"></i>
-              <span>Home</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/Services" activeClassName="navActive">
-              <i className="fas fa-home"></i>
-              <span>Services</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/Portfolio" activeClassName="navActive">
-              <i className="fas fa-images"></i>
-              <span>Portfolio</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/Contact" activeClassName="navActive">
-              <i className="fas fa-home"></i>
-              <span>Contact</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/MentionsLegales" activeClassName="navActive">
-              <i className="fas fa-home"></i>
-              <span>Mentions légales</span>
-            </NavLink>
-          </li>
-        </ul>
-      </div>
-    </div>
+          {/* Menu de navigation */}
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav ms-auto">
+              <li className="nav-item">
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive ? 'nav-link active' : 'nav-link'
+                  }
+                >
+                  HOME
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  to="/Services"
+                  className={({ isActive }) =>
+                    isActive ? 'nav-link active' : 'nav-link'
+                  }
+                >
+                  SERVICES
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  to="/Portfolio"
+                  className={({ isActive }) =>
+                    isActive ? 'nav-link active' : 'nav-link'
+                  }
+                >
+                  PORTFOLIO
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  to="/Contact"
+                  className={({ isActive }) =>
+                    isActive ? 'nav-link active' : 'nav-link'
+                  }
+                >
+                  CONTACT
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  to="/MentionsLegales"
+                  className={({ isActive }) =>
+                    isActive ? 'nav-link active' : 'nav-link'
+                  }
+                >
+                  MENTIONS LÉGALES
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </>
   );
 };
 
