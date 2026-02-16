@@ -386,6 +386,36 @@ footer a:hover {
 .accordion-body i {
   width: 20px;
 }
+
+/* Animation d'entrée modale */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.github-modal-overlay {
+  animation: fadeIn 0.2s ease;
+}
+
+.github-modal-content {
+  animation: slideUp 0.3s ease;
+}
+
 /* ============================================
    RESPONSIVE
 ============================================ */
@@ -455,4 +485,24 @@ footer a:hover {
     padding: 1.25rem 1rem;
   }
 }
+/* Responsive modal */
+@media (max-width: 576px) {
+  .github-modal-content {
+    padding: 1.5rem;
+    max-height: 85vh;
+  }
 
+  .github-modal-title {
+    font-size: 1.25rem;
+  }
+
+  .github-avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .github-info-item {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+  }
+}
