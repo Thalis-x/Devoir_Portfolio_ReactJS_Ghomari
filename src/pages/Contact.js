@@ -1,16 +1,22 @@
 import React from 'react';
 
 const Contact = () => {
+  // Fonction pour copier au clic
+  const handleCopy = (text, label) => {
+    navigator.clipboard.writeText(text).then(() => {
+      alert(`${label} copié : ${text}`);
+    });
+  };
+
   return (
     <div>
       {/* Section Titre avec padding en haut */}
       <section className="py-5 bg-white">
         <div className="container">
-          <div className="text-center mb-5">
+          <div className="text-center mb-5 ">
             <h1 className="display-5 fw-bold mb-3">Contact</h1>
             <p className="text-muted mb-4">
-              Pour me contacter en vue d'un entretien ou d'une future
-              collaboration, merci de remplir le formulaire de contact.
+              Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.
             </p>
             <div className="ligne mx-auto pb-2 border-bottom border-primary border-5"></div>
           </div>
@@ -20,12 +26,12 @@ const Contact = () => {
             {/* Colonne Gauche - Formulaire */}
             <div className="col-12 col-lg-6">
               <div className="contact-form-section">
-                <h2 className="h4 mb-4 pb-3 border-bottom border-primary border-3">
+                <h2 className="h4 mb-3 pb-3 border-bottom border-primary border-3">
                   Formulaire de contact
                 </h2>
                 <form>
                   {/* Votre nom */}
-                  <div className="mb-3">
+                  <div className="mb-2">
                     <input
                       type="text"
                       className="form-control"
@@ -35,7 +41,7 @@ const Contact = () => {
                   </div>
 
                   {/* Votre adresse email */}
-                  <div className="mb-3">
+                  <div className="mb-2">
                     <input
                       type="email"
                       className="form-control"
@@ -45,7 +51,7 @@ const Contact = () => {
                   </div>
 
                   {/* Votre numéro de téléphone */}
-                  <div className="mb-3">
+                  <div className="mb-2">
                     <input
                       type="tel"
                       className="form-control"
@@ -55,7 +61,7 @@ const Contact = () => {
                   </div>
 
                   {/* Sujet */}
-                  <div className="mb-3">
+                  <div className="mb-2">
                     <input
                       type="text"
                       className="form-control"
@@ -85,32 +91,50 @@ const Contact = () => {
             {/* Colonne Droite - Coordonnées + Map */}
             <div className="col-12 col-lg-6">
               <div className="contact-info-section">
-                <h2 className="h4 mb-4 pb-3 border-bottom border-primary border-3">
+                <h2 className="h4 mb-3 pb-3 border-bottom border-primary border-3">
                   Mes coordonnées
                 </h2>
 
                 {/* Nom */}
-                <div className="contact-info-item mb-3">
-                  <h3 className="h5 fw-bold mb-3">John Doe</h3>
+                <div className="contact-info-item mb-2">
+                  <h3 className="h5 fw-bold mb-2">John Doe</h3>
                 </div>
 
-                {/* Adresse */}
-                <div className="contact-info-item mb-2">
-                  <i className="fas fa-map-marker-alt me-2 text-primary"></i>
-                  <span>40 rue Laure Diebold</span>
-                </div>
-                <div className="contact-info-item mb-3 ms-4">
-                  <span>69009 Lyon, France</span>
+                {/* Adresse - Cliquable pour copier */}
+                <div 
+                  className="contact-info-item mb-1 clickable-info"
+                  onClick={() => handleCopy('40 rue Laure Diebold, 69009 Lyon, France', 'Adresse')}
+                  style={{ cursor: 'pointer' }}
+                  title="Cliquer pour copier"
+                >
+                    {/* Création de deux div pour avoir ladresse sur deux ligne clickable */}
+               <div className="d-flex align-items-start">
+                    <i className="fas fa-map-marker-alt me-2 text-primary" style={{ marginTop: '0.2rem' }}></i>
+                    <div>
+                      <div>40 rue Laure Diebold</div>
+                      <div>69009 Lyon, France</div>
+                    </div>
+                  </div>
                 </div>
 
-                {/* Téléphone */}
-                <div className="contact-info-item mb-2">
+                {/* Téléphone - Cliquable pour copier */}
+                <div 
+                  className="contact-info-item mb-1 clickable-info"
+                  onClick={() => handleCopy('10 20 30 40 50', 'Téléphone')}
+                  style={{ cursor: 'pointer' }}
+                  title="Cliquer pour copier"
+                >
                   <i className="fas fa-phone me-2 text-primary"></i>
                   <span>10 20 30 40 50</span>
                 </div>
 
-                {/* Email */}
-                <div className="contact-info-item mb-4">
+                {/* Email - Cliquable pour copier */}
+                <div 
+                  className="contact-info-item mb-3 clickable-info"
+                  onClick={() => handleCopy('john.doe@gmail.com', 'Email')}
+                  style={{ cursor: 'pointer' }}
+                  title="Cliquer pour copier"
+                >
                   <i className="fas fa-envelope me-2 text-primary"></i>
                   <span>john.doe@gmail.com</span>
                 </div>
