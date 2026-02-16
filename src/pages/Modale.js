@@ -5,8 +5,7 @@ import Footer from "../components/Footer";
 const Modale = () => {
     return (
         <div>
-            <Navigation/>
-            <Footer/>
+            
             <p>OK</p>
         </div>
     );

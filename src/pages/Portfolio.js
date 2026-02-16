@@ -5,8 +5,7 @@ import Footer from "../components/Footer";
 const Portfolio = () => {
     return (
         <div>
-            <Navigation/>
-            <Footer/>
+            
             <p>Portfolio</p>
         </div>
     );

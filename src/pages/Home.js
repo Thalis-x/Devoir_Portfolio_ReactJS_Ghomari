@@ -2,12 +2,9 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
-
 const Home = () => {
   return (
     <div>
-      <Navigation />
-
       {/* Section Hero */}
       <section
         className="hero-section d-flex align-items-center justify-content-center text-white text-center"
@@ -17,7 +14,6 @@ const Home = () => {
           backgroundPosition: 'center',
           minHeight: '100vh',
           position: 'relative',
-          
         }}
       >
         {/* Overlay sombre */}
@@ -45,7 +41,7 @@ const Home = () => {
           <div className="row">
             {/* A propos */}
             <div className="col-md-6 mb-4">
-                {/* Barre bleu en dessous de a propos et mes compétences */}
+              {/* Barre bleu en dessous de a propos et mes compétences */}
               <h2 className="mb-4 pb-2 border-bottom border-primary border-3">
                 À propos
               </h2>
@@ -170,8 +166,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };
