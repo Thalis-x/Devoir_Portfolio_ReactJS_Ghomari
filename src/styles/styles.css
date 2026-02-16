@@ -23,15 +23,13 @@ body {
   color: #6267cd !important;
   font-weight: bold;
   display: inline-block;
-  text-decoration: underline ;
   transition: transform 0.3s ease;
   transform: translateY(-2px);
 }
 
 .nav-link.active {
   color: #ffffff !important;
-  
-  
+  text-decoration: underline ;
 }
 
 /* Hero Section */
@@ -147,10 +145,12 @@ footer a:hover {
 }
 
 /* Section titre Services */
-.display-5 {
-  color: #212529;
+/* .display-5 {
+  color: #111010;
   font-weight: 700;
-}
+} */
+
+/* contour des cards */
 .card-body{
   border: 1px solid rgba(92, 91, 91, 0.266);
   border-radius: 5px;

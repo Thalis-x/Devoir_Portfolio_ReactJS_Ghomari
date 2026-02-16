@@ -1,6 +1,4 @@
 import React from 'react';
-import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
 
 const Home = () => {
   return (
@@ -30,7 +28,7 @@ const Home = () => {
 
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <h1 className="display-3 fw-bold mb-3">Bonjour, je suis John Doe</h1>
-          <h2 className="display-5 fw-bold mb-4">Développeur web full-stack</h2>
+          <h2 className="display-5 fw-bold mb-4 text-white">Développeur web full-stack</h2>
           <button className="btn btn-danger btn-lg px-4">En savoir plus</button>
         </div>
       </section>
@@ -50,7 +48,7 @@ const Home = () => {
                 src="/images/john-doe-about.jpg"
                 alt="John Doe"
                 className="img-fluid mb-3"
-                style={{ width: '100%', maxWidth: '400hv' }}
+                style={{ width: '100%', maxWidth: '400vh' }}
               />
 
               <p className="text-muted">

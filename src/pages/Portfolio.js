@@ -1,9 +1,8 @@
 import React from 'react';
-import Navigation from '../components/Navigation';
-import Footer from "../components/Footer";
+
 
 const Portfolio = () => {
- return (
+  return (
     <div>
       {/* Section Hero - Bannière bleue */}
       <section
@@ -53,16 +52,27 @@ const Portfolio = () => {
               <div className="service-card card h-100 border-0 shadow-sm">
                 <div className="card-body text-center p-4">
                   <div className="service-icon mb-4">
-                    <i className="fas fa-pen-nib fa-3x text-primary"></i>
+                    <img
+                      src="/images/john-doe-about.jpg"
+                      alt="Fresh Food"
+                      className="card-img-top"
+                      style={{ height: '200px', objectFit: 'cover' }}
+                      
+                    />
+                    
                   </div>
                   <h3 className="card-title h4 mb-3">Fresh Food</h3>
                   <p className="card-text text-muted">
-                    L'UX Design est une discipline qui consiste à concevoir des
-                    produits (sites web, applications mobiles, logiciels, objets
-                    connectés, etc.) en plaçant l'utilisateur au centre des
-                    préoccupations. L'objectif est de rendre l'expérience
-                    utilisateur la plus fluide et agréable possible.
+                    Site de vente de produits frais en ligne
                   </p>
+                  <a
+                    href="https://www.google.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary px-2"
+                  >
+                    Voir le site
+                  </a>
                 </div>
               </div>
             </div>
@@ -104,7 +114,7 @@ const Portfolio = () => {
               </div>
             </div>
 
-             {/* Card 4 - SEO */}
+            {/* Card 4 - SEO */}
             <div className="col-12 col-md-6 col-lg-4">
               <div className="service-card card h-100 border-0 shadow-sm">
                 <div className="card-body text-center p-4">
@@ -122,7 +132,7 @@ const Portfolio = () => {
               </div>
             </div>
 
-             {/* Card 5 - Création d'une API */}
+            {/* Card 5 - Création d'une API */}
             <div className="col-12 col-md-6 col-lg-4">
               <div className="service-card card h-100 border-0 shadow-sm">
                 <div className="card-body text-center p-4">
@@ -140,7 +150,7 @@ const Portfolio = () => {
               </div>
             </div>
 
-             {/* Card 6 - Maquette d'un site web  */}
+            {/* Card 6 - Maquette d'un site web  */}
             <div className="col-12 col-md-6 col-lg-4">
               <div className="service-card card h-100 border-0 shadow-sm">
                 <div className="card-body text-center p-4">
