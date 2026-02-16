@@ -95,7 +95,7 @@ footer a:hover {
 }
 
 /* ============================================
-   PAGE SERVICES - AJOUT NOUVEAU
+                 PAGE SERVICES 
 ============================================ */
 
 /* Hero Banner Services */
@@ -161,6 +161,78 @@ footer a:hover {
     height: 3px;
   }
 
+  /* ============================================
+                  PAGE PORTFOLIO 
+============================================ */
+
+
+/* Portfolio Cards */
+.portfolio-card {
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  cursor: pointer;
+  overflow: hidden; /* Important pour que l'image ne dépasse pas */
+  border: 1px solid rgba(92, 91, 91, 0.2); /* Bordure légère sur toute la card */
+  border-radius: 5px;
+}
+
+/* Effet hover sur les cards portfolio */
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Images en pleine largeur */
+.portfolio-card .card-img-top {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 0; /* Pas d'arrondi sur l'image */
+}
+
+/* Zoom léger sur l'image au survol */
+.portfolio-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Card body portfolio - sans bordure visible */
+.portfolio-card .card-body {
+  border: none; /* Pas de bordure pour éviter toute séparation */
+  padding: 1rem 1.5rem; /* Padding réduit pour cards plus compactes */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pour pousser le footer en bas */
+}
+
+/* Section info en bas de la card (technologie) */
+.card-footer-info {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0.5rem -1.5rem -1rem; /* Moins d'espace en haut, touche les bords */
+  padding: 0.5rem 1rem; /* Padding réduit */
+  background-color: #f8f9fa; /* Fond gris clair */
+  border-radius: 0 0 5px 5px;
+}
+
+/* Titre des cards portfolio */
+.portfolio-card .card-title {
+  font-weight: bold;
+  color: #212529;
+  font-size: 1.1rem;
+}
+
+/* Bouton "Voir le site" dans les cards */
+.portfolio-card .btn {
+  padding: 0.25rem 0.75rem; /* Bouton plus petit */
+  font-size: 0.85rem; /* Texte plus petit */
+  width: auto; /*  Largeur automatique (pas toute la largeur) */
+  align-self: center; /*  Centré dans le flexbox */
+  transition: all 0.3s ease;
+}
+
+.portfolio-card .btn:hover {
+  transform: scale(1.05);
+}
 /* ============================================
    RESPONSIVE
 ============================================ */

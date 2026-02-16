@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Portfolio = () => {
   return (
     <div>
@@ -45,23 +44,49 @@ const Portfolio = () => {
             ></div>
           </div>
 
-          {/* Cards Services */}
+          {/* Cards Portfolio */}
           <div className="row g-4 mt-4">
             {/* Card 1 - Fresh Food */}
             <div className="col-12 col-md-6 col-lg-4">
-              <div className="service-card card h-100 border-0 shadow-sm">
-                <div className="card-body text-center p-4">
-                  <div className="service-icon mb-4">
-                    <img
-                      src="/images/john-doe-about.jpg"
-                      alt="Fresh Food"
-                      className="card-img-top"
-                      style={{ height: '200px', objectFit: 'cover' }}
-                      
-                    />
-                    
+              <div className="portfolio-card card h-100 border-0 shadow-sm">
+                {/*  Image en premier - en dehors du carf body */}
+                <img
+                  src="/images/portfolio/fresh-food.jpg"
+                  alt="Fresh Food"
+                  className="card-img-top"
+                />
+                {/* Card body aprés limage */}
+                <div className="card-body text-center">
+                  <h3 className="card-title h5 mb-2">Fresh Food</h3>
+                  <p className="card-text text-muted mb-2" style={{ fontSize: '0.9rem' }}>
+                    Site de vente de produits frais en ligne
+                  </p>
+                  <a
+                    href="https://www.google.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary btn-sm"
+                  >
+                    Voir le site
+                  </a>
+                  {/* Section grise en bas */}
+                  <div className="card-footer-info">
+                    <small className="text-muted">Site réalisé avec PHP et MySQL</small>
                   </div>
-                  <h3 className="card-title h4 mb-3">Fresh Food</h3>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 2 - Restaurant Akira */}
+            <div className="col-12 col-md-6 col-lg-4">
+              <div className="service-card card h-100 border-0 shadow-sm">
+                <img
+                  src="/images/portfolio/restaurant-japonais.jpg"
+                  alt="Fresh Food"
+                  className="card-img-top"
+                />
+                <div className="card-body text-center p-4">
+                  <h3 className="card-title h4 mb-3">Restaurant Akira</h3>
                   <p className="card-text text-muted">
                     Site de vente de produits frais en ligne
                   </p>
@@ -73,24 +98,6 @@ const Portfolio = () => {
                   >
                     Voir le site
                   </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Card 2 - Restaurant Akira */}
-            <div className="col-12 col-md-6 col-lg-4">
-              <div className="service-card card h-100 border-0 shadow-sm">
-                <div className="card-body text-center p-4">
-                  <div className="service-icon mb-4">
-                    <i className="fas fa-code fa-3x text-primary"></i>
-                  </div>
-                  <h3 className="card-title h4 mb-3">Restaurant Akira</h3>
-                  <p className="card-text text-muted">
-                    Le développement de sites web consiste à créer des sites
-                    internet en utilisant des langages de programmation (HTML,
-                    CSS, JavaScript, PHP, etc.) et des frameworks (Bootstrap,
-                    React, Angular, etc.).
-                  </p>
                 </div>
               </div>
             </div>
