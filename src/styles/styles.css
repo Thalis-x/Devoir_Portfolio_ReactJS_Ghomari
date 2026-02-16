@@ -397,7 +397,7 @@ footer a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.85); /* Fond noir semi-transparent */
+  background-color: rgba(0, 0, 0, 0.65); /* Fond noir semi-transparent */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -459,6 +459,18 @@ footer a:hover {
   color: #adbac7;
 }
 
+/* Layout : Avatar à gauche + Infos à droite */
+.github-profile-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* Container de l'avatar */
+.github-avatar-container {
+  flex-shrink: 0;
+}
+
 /* Avatar GitHub */
 .github-avatar {
   width: 150px;
@@ -470,7 +482,7 @@ footer a:hover {
 
 /* Liste d'informations */
 .github-info {
-  margin-top: 1.5rem;
+  flex: 1;
 }
 
 .github-info-item {
@@ -480,6 +492,10 @@ footer a:hover {
   color: #adbac7;
   font-size: 0.95rem;
   border-bottom: 1px solid #373e47;
+}
+
+.github-info-item:first-child {
+  padding-top: 0;
 }
 
 .github-info-item:last-child {
@@ -526,6 +542,7 @@ footer a:hover {
 .spinner-border.text-light {
   color: #adbac7 !important;
 }
+
 /* Animation d'entrée modale */
 @keyframes fadeIn {
   from {
@@ -634,7 +651,15 @@ footer a:hover {
   .github-modal-title {
     font-size: 1.25rem;
   }
+/* Layout vertical sur mobile */
+  .github-profile-layout {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
+  .github-avatar-container {
+    align-self: center;
+  }
   .github-avatar {
     width: 120px;
     height: 120px;

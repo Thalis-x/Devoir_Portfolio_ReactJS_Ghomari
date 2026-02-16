@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-
 const Home = () => {
   // État pour gérer l'ouverture/fermeture de la modale
   const [showModal, setShowModal] = useState(false);
@@ -14,7 +13,7 @@ const Home = () => {
     const fetchGithubData = async () => {
       setLoading(true);
       try {
-        const response = await fetch('https://api.github.com/users/github-johndoe');
+        const response = await fetch('https://api.github.com/users/github-john-doe');
         const data = await response.json();
         setGithubData(data);
       } catch (error) {
@@ -33,7 +32,6 @@ const Home = () => {
 
   return (
     <div>
-
       {/* Section Hero */}
       <section
         className="hero-section d-flex align-items-center justify-content-center text-white text-center"
@@ -103,62 +101,63 @@ const Home = () => {
               </div>
             ) : githubData ? (
               <div className="github-modal-body">
-                {/* Avatar */}
-                <div className="text-center mb-4">
-                  <img
-                    src={githubData.avatar_url}
-                    alt={githubData.name || githubData.login}
-                    className="github-avatar"
-                  />
-                </div>
-
-                {/* Informations */}
-                <div className="github-info">
-                  {/* Nom */}
-                  <div className="github-info-item">
-                    <i className="fas fa-user me-2"></i>
-                    <a
-                      href={githubData.html_url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="github-link"
-                    >
-                      {githubData.name || githubData.login}
-                    </a>
+                {/* Layout : Avatar à gauche + Infos à droite */}
+                <div className="github-profile-layout">
+                  {/* Avatar à gauche */}
+                  <div className="github-avatar-container">
+                    <img
+                      src={githubData.avatar_url}
+                      alt={githubData.name || githubData.login}
+                      className="github-avatar"
+                    />
                   </div>
 
-                  {/* Localisation */}
-                  {githubData.location && (
+                  {/* Informations à droite */}
+                  <div className="github-info">
+                    {/* Nom */}
+                    <div className="github-info-item">
+                      <i className="fas fa-user me-2"></i>
+                      <a
+                        href={githubData.html_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="github-link"
+                      >
+                        {githubData.name || githubData.login}
+                      </a>
+                    </div>
+
+                    {/* Localisation */}
                     <div className="github-info-item">
                       <i className="fas fa-location-dot me-2"></i>
-                      <span>{githubData.location}</span>
+                      <span>{githubData.location || ''}</span>
                     </div>
-                  )}
 
-                  {/* Bio */}
-                  {githubData.bio && (
+                    {/* Bio */}
+                    {githubData.bio && (
+                      <div className="github-info-item">
+                        <i className="fas fa-comment me-2"></i>
+                        <span>{githubData.bio}</span>
+                      </div>
+                    )}
+
+                    {/* Repositories */}
                     <div className="github-info-item">
-                      <i className="fas fa-comment me-2"></i>
-                      <span>{githubData.bio}</span>
+                      <i className="fas fa-folder me-2"></i>
+                      <span>Repositories : {githubData.public_repos}</span>
                     </div>
-                  )}
 
-                  {/* Repositories */}
-                  <div className="github-info-item">
-                    <i className="fas fa-folder me-2"></i>
-                    <span>Repositories : {githubData.public_repos}</span>
-                  </div>
+                    {/* Followers */}
+                    <div className="github-info-item">
+                      <i className="fas fa-users me-2"></i>
+                      <span>Followers : {githubData.followers}</span>
+                    </div>
 
-                  {/* Followers */}
-                  <div className="github-info-item">
-                    <i className="fas fa-users me-2"></i>
-                    <span>Followers : {githubData.followers}</span>
-                  </div>
-
-                  {/* Following */}
-                  <div className="github-info-item">
-                    <i className="fas fa-user-plus me-2"></i>
-                    <span>Following : {githubData.following}</span>
+                    {/* Following */}
+                    <div className="github-info-item">
+                      <i className="fas fa-user-plus me-2"></i>
+                      <span>Following : {githubData.following}</span>
+                    </div>
                   </div>
                 </div>
 
@@ -317,3 +316,11 @@ const Home = () => {
 };
 
 export default Home;
+
+
+
+
+
+
+
+
