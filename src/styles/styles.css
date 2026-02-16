@@ -386,7 +386,146 @@ footer a:hover {
 .accordion-body i {
   width: 20px;
 }
+/* ============================================
+            MODALE GITHUB
+============================================ */
 
+/* Overlay (fond semi-transparent) */
+.github-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85); /* Fond noir semi-transparent */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 1rem;
+}
+
+/* Contenu de la modale */
+.github-modal-content {
+  background-color: #2d333b; /* Fond sombre comme GitHub */
+  border-radius: 0.5rem;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Bouton fermer (X) */
+.github-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  color: #adbac7;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.github-modal-close:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.25rem;
+}
+
+/* Titre de la modale */
+.github-modal-title {
+  color: #adbac7;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #444c56;
+}
+
+/* Corps de la modale */
+.github-modal-body {
+  color: #adbac7;
+}
+
+/* Avatar GitHub */
+.github-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #444c56;
+  object-fit: cover;
+}
+
+/* Liste d'informations */
+.github-info {
+  margin-top: 1.5rem;
+}
+
+.github-info-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 0.75rem 0;
+  color: #adbac7;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #373e47;
+}
+
+.github-info-item:last-child {
+  border-bottom: none;
+}
+
+.github-info-item i {
+  width: 24px;
+  flex-shrink: 0;
+  color: #768390;
+}
+
+.github-info-item span {
+  flex: 1;
+}
+
+/* Lien GitHub */
+.github-link {
+  color: #539bf5;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.github-link:hover {
+  color: #6cb6ff;
+  text-decoration: underline;
+}
+
+/* Bouton Fermer en bas */
+.github-modal-body .btn-secondary {
+  background-color: #444c56;
+  border: none;
+  color: #adbac7;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.github-modal-body .btn-secondary:hover {
+  background-color: #545d68;
+  color: #ffffff;
+}
+
+/* Spinner de chargement */
+.spinner-border.text-light {
+  color: #adbac7 !important;
+}
 /* Animation d'entrée modale */
 @keyframes fadeIn {
   from {
