@@ -374,3 +374,19 @@ footer a:hover {
   }
 }
 
+/* Responsive page Mentions légales */
+@media (max-width: 768px) {
+  .accordion {
+    max-width: 100%;
+  }
+  
+  .accordion-button {
+    font-size: 1rem;
+    padding: 0.875rem 1rem;
+  }
+  
+  .accordion-body {
+    padding: 1.25rem 1rem;
+  }
+}
+
