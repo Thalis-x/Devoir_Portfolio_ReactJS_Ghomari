@@ -49,7 +49,7 @@ const Portfolio = () => {
             {/* Card 1 - Fresh Food */}
             <div className="col-12 col-md-6 col-lg-4">
               <div className="portfolio-card card h-100 border-0 shadow-sm">
-                {/*  Image en premier - en dehors du carf body */}
+                {/*  Image en premier - en dehors du card body */}
                 <img
                   src="/images/portfolio/fresh-food.jpg"
                   alt="Fresh Food"
@@ -79,101 +79,159 @@ const Portfolio = () => {
 
             {/* Card 2 - Restaurant Akira */}
             <div className="col-12 col-md-6 col-lg-4">
-              <div className="service-card card h-100 border-0 shadow-sm">
+              <div className="portfolio-card card h-100 border-0 shadow-sm">
+                {/*  Image en premier - en dehors du card body */}
                 <img
                   src="/images/portfolio/restaurant-japonais.jpg"
-                  alt="Fresh Food"
+                  alt="Restaurant Akira"
                   className="card-img-top"
                 />
-                <div className="card-body text-center p-4">
-                  <h3 className="card-title h4 mb-3">Restaurant Akira</h3>
-                  <p className="card-text text-muted">
+                {/* Card body aprés limage */}
+                <div className="card-body text-center">
+                  <h3 className="card-title h5 mb-2">Restaurant Akira</h3>
+                  <p className="card-text text-muted mb-2" style={{ fontSize: '0.9rem' }}>
                     Site de vente de produits frais en ligne
                   </p>
                   <a
                     href="https://www.google.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-primary px-2"
+                    className="btn btn-primary btn-sm"
                   >
                     Voir le site
                   </a>
+                  {/* Section grise en bas */}
+                  <div className="card-footer-info">
+                    <small className="text-muted">Site réalisé avec WordPress</small>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Card 3 - Espace bien-être */}
-            <div className="col-12 col-md-6 col-lg-4">
-              <div className="service-card card h-100 border-0 shadow-sm">
-                <div className="card-body text-center p-4">
-                  <div className="service-icon mb-4">
-                    <i className="fas fa-search fa-3x text-primary"></i>
-                  </div>
-                  <h3 className="card-title h4 mb-3">Espace bien-être</h3>
-                  <p className="card-text text-muted">
-                    Le référencement naturel (SEO) est une technique qui
-                    consiste à optimiser un site web pour le faire remonter dans
-                    les résultats des moteurs de recherche (Google, Bing, Yahoo,
-                    etc.). L'objectif est d'attirer un maximum de visiteurs
-                    qualifiés sur le site.
+             <div className="col-12 col-md-6 col-lg-4">
+              <div className="portfolio-card card h-100 border-0 shadow-sm">
+                {/*  Image en premier - en dehors du card body */}
+                <img
+                  src="/images/portfolio/espace-bien-etre.jpg"
+                  alt="espace bien-être"
+                  className="card-img-top"
+                />
+                {/* Card body aprés limage */}
+                <div className="card-body text-center">
+                  <h3 className="card-title h5 mb-2">Espace bien-être</h3>
+                  <p className="card-text text-muted mb-2" style={{ fontSize: '0.9rem' }}>
+                    Site de vente de produits en ligne
                   </p>
+                  <a
+                    href="https://www.google.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary btn-sm"
+                  >
+                    Voir le site
+                  </a>
+                  {/* Section grise en bas */}
+                  <div className="card-footer-info">
+                    <small className="text-muted">Site réalisé avec LARAVEL</small>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Card 4 - SEO */}
             <div className="col-12 col-md-6 col-lg-4">
-              <div className="service-card card h-100 border-0 shadow-sm">
-                <div className="card-body text-center p-4">
-                  <div className="service-icon mb-4">
-                    <i className="fas fa-code fa-3x text-primary"></i>
-                  </div>
-                  <h3 className="card-title h4 mb-3">SEO</h3>
-                  <p className="card-text text-muted">
-                    Le développement de sites web consiste à créer des sites
-                    internet en utilisant des langages de programmation (HTML,
-                    CSS, JavaScript, PHP, etc.) et des frameworks (Bootstrap,
-                    React, Angular, etc.).
+              <div className="portfolio-card card h-100 border-0 shadow-sm">
+                {/*  Image en premier - en dehors du card body */}
+                <img
+                  src="/images/portfolio/seo.jpg"
+                  alt="SEO"
+                  className="card-img-top"
+                />
+                {/* Card body aprés limage */}
+                <div className="card-body text-center">
+                  <h3 className="card-title h5 mb-2">SEO</h3>
+                  <p className="card-text text-muted mb-2" style={{ fontSize: '0.9rem' }}>
+                    Amélioration du référencement d'un site e-commerce
                   </p>
+                  <a
+                    href="https://www.google.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary btn-sm"
+                  >
+                    Voir le site
+                  </a>
+                  {/* Section grise en bas */}
+                  <div className="card-footer-info">
+                    <small className="text-muted">Utilisation des outils SEO</small>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Card 5 - Création d'une API */}
-            <div className="col-12 col-md-6 col-lg-4">
-              <div className="service-card card h-100 border-0 shadow-sm">
-                <div className="card-body text-center p-4">
-                  <div className="service-icon mb-4">
-                    <i className="fas fa-code fa-3x text-primary"></i>
-                  </div>
-                  <h3 className="card-title h4 mb-3">Création d'une API</h3>
-                  <p className="card-text text-muted">
-                    Le développement de sites web consiste à créer des sites
-                    internet en utilisant des langages de programmation (HTML,
-                    CSS, JavaScript, PHP, etc.) et des frameworks (Bootstrap,
-                    React, Angular, etc.).
+             <div className="col-12 col-md-6 col-lg-4">
+              <div className="portfolio-card card h-100 border-0 shadow-sm">
+                {/*  Image en premier - en dehors du card body */}
+                <img
+                  src="/images/portfolio/coder.jpg"
+                  alt="coder"
+                  className="card-img-top"
+                />
+                {/* Card body aprés limage */}
+                <div className="card-body text-center">
+                  <h3 className="card-title h5 mb-2">Création d'une API</h3>
+                  <p className="card-text text-muted mb-2" style={{ fontSize: '0.9rem' }}>
+                    Création d'une API RESTFULL publique
                   </p>
+                  <a
+                    href="https://www.google.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary btn-sm"
+                  >
+                    Voir le site
+                  </a>
+                  {/* Section grise en bas */}
+                  <div className="card-footer-info">
+                    <small className="text-muted">PHP - SYMFONY</small>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Card 6 - Maquette d'un site web  */}
             <div className="col-12 col-md-6 col-lg-4">
-              <div className="service-card card h-100 border-0 shadow-sm">
-                <div className="card-body text-center p-4">
-                  <div className="service-icon mb-4">
-                    <i className="fas fa-code fa-3x text-primary"></i>
-                  </div>
-                  <h3 className="card-title h4 mb-3">Maquette d'un site web</h3>
-                  <p className="card-text text-muted">
-                    Le développement de sites web consiste à créer des sites
-                    internet en utilisant des langages de programmation (HTML,
-                    CSS, JavaScript, PHP, etc.) et des frameworks (Bootstrap,
-                    React, Angular, etc.).
+              <div className="portfolio-card card h-100 border-0 shadow-sm">
+                {/*  Image en premier - en dehors du card body */}
+                <img
+                  src="/images/portfolio/screens.jpg"
+                  alt="screens"
+                  className="card-img-top"
+                />
+                {/* Card body aprés limage */}
+                <div className="card-body text-center">
+                  <h3 className="card-title h5 mb-2">Maquette d'un site web</h3>
+                  <p className="card-text text-muted mb-2" style={{ fontSize: '0.9rem' }}>
+                    Création du prototype d'un site
                   </p>
+                  <a
+                    href="https://www.google.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary btn-sm"
+                  >
+                    Voir le site
+                  </a>
+                  {/* Section grise en bas */}
+                  <div className="card-footer-info">
+                    <small className="text-muted">Réalisé avec FIGMA</small>
+                  </div>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
