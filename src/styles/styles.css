@@ -233,6 +233,81 @@ footer a:hover {
   background-color: #3d85f0;
 }
 
+/* ============================================
+                  PAGE CONTACT
+============================================ */
+
+/* Section formulaire et coordonnées */
+.contact-form-section,
+.contact-info-section {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+
+/* Titres des sections Contact */
+.contact-form-section h2,
+.contact-info-section h2 {
+  font-weight: bold;
+  color: #212529;
+}
+
+/* Champs du formulaire */
+.contact-form-section .form-control {
+  border: 1px solid #dee2e6;
+  padding: 0.60rem;
+  border-radius: 0.375rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form-section .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Textarea */
+.contact-form-section textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Bouton Envoyer */
+.contact-form-section .btn-primary {
+  /* padding: 0.2rem 0.5rem; taille du bouton */
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: block; /* Nécessaire pour le centrage */
+  width: auto; /* Largeur automatique */
+  margin: 0 auto; /* Centre le bouton */
+}
+
+.contact-form-section .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Coordonnées */
+.contact-info-item {
+  font-size: 0.95rem;
+  color: #495057;
+}
+
+.contact-info-item i {
+  width: 20px;
+  font-size: 1rem;
+}
+
+/* Map container */
+.map-container {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  display: block;
+  border-radius: 5px;
+}
 
 
 /* ============================================
@@ -279,4 +354,10 @@ footer a:hover {
     padding: 2rem !important;
   }
 
+  /* Responsive contact */
+@media (max-width: 991px) {
+  .contact-info-section {
+    margin-top: 2rem;
+  }
+}
 

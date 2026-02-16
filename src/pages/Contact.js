@@ -9,13 +9,14 @@ const Contact = () => {
           <div className="text-center mb-5">
             <h1 className="display-5 fw-bold mb-3">Contact</h1>
             <p className="text-muted mb-4">
-              Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.
+              Pour me contacter en vue d'un entretien ou d'une future
+              collaboration, merci de remplir le formulaire de contact.
             </p>
             <div className="ligne mx-auto pb-2 border-bottom border-primary border-5"></div>
           </div>
 
           {/* Section Formulaire + Coordonnées */}
-          <div className="row g-4 mt-4">
+          <div className="row g-4 mt-4 shadow rounded-3">
             {/* Colonne Gauche - Formulaire */}
             <div className="col-12 col-lg-6">
               <div className="contact-form-section">
