@@ -180,6 +180,8 @@ footer a:hover {
 .portfolio-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+  /* partie grisé des cards */
+  background-color: #efefef;
 }
 
 /* Images en pleine largeur */
@@ -188,7 +190,6 @@ footer a:hover {
   height: 280px;
   object-fit: cover;
   transition: transform 0.3s ease;
-  border-radius: 0; /* Pas d'arrondi sur l'image */
 }
 
 /* Zoom léger sur l'image au survol */
@@ -223,15 +224,13 @@ footer a:hover {
 
 /* Bouton "Voir le site" dans les cards */
 .portfolio-card .btn {
-  padding: 0.25rem 0.75rem; /* Bouton plus petit */
-  font-size: 0.85rem; /* Texte plus petit */
-  width: auto; /*  Largeur automatique (pas toute la largeur) */
   align-self: center; /*  Centré dans le flexbox */
   transition: all 0.3s ease;
 }
 
 .portfolio-card .btn:hover {
   transform: scale(1.05);
+  background-color: #3d85f0;
 }
 /* ============================================
    RESPONSIVE
