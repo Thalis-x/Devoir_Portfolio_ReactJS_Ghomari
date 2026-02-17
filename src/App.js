@@ -12,7 +12,7 @@ import Services from './pages/Services';
 // ⭐ Séparé de App car useLocation ne fonctionne qu'à l'intérieur de BrowserRouter
 const AppContent = () => {
   const location = useLocation();
-  const is404 = !['/', '/Contact', '/MentionsLegales', '/portfolio', '/services'].includes(location.pathname);
+  const is404 = !['/', '/Contact', '/MentionsLegales', '/Portfolio', '/Services'].includes(location.pathname);
 
   return (
     <div className="d-flex flex-column min-vh-100">
@@ -23,8 +23,8 @@ const AppContent = () => {
           <Route path="/" element={<Home />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/MentionsLegales" element={<MentionsLegales />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/Portfolio" element={<Portfolio />} />
+          <Route path="/Services" element={<Services />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

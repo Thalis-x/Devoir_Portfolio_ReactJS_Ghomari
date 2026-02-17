@@ -29,7 +29,7 @@ const NotFound = () => {
       <Link to="/" className="btn btn-primary mb-3">
         Retour à l'accueil
       </Link>
-      <a href="http://www.freepik.com" style={{ fontSize: '0.75rem' }} className="text-white mt-2">
+      <a href="http://www.freepik.com" style={{ fontSize: '0.80rem' }} className="text-white mb-3">
         Designed by Freepik
       </a>
     </section>
