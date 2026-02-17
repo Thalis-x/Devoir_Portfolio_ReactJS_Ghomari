@@ -109,7 +109,7 @@ const Contact = () => {
                 >
                     {/* Création de deux div pour avoir ladresse sur deux ligne clickable */}
                <div className="d-flex align-items-start">
-                    <i className="fas fa-map-marker-alt me-2 text-primary" style={{ marginTop: '0.2rem' }}></i>
+                    <i className="bi bi-geo-alt me-2" style={{ marginTop: '0.2rem' }}></i>
                     <div>
                       <div>40 rue Laure Diebold</div>
                       <div>69009 Lyon, France</div>
@@ -124,7 +124,7 @@ const Contact = () => {
                   style={{ cursor: 'pointer' }}
                   title="Cliquer pour copier"
                 >
-                  <i className="fas fa-phone me-2 text-primary"></i>
+                  <i className="bi bi-phone me-2"></i>
                   <span>10 20 30 40 50</span>
                 </div>
 
@@ -135,7 +135,7 @@ const Contact = () => {
                   style={{ cursor: 'pointer' }}
                   title="Cliquer pour copier"
                 >
-                  <i className="fas fa-envelope me-2 text-primary"></i>
+                  <i className="bi bi-envelope-at me-2 "></i>
                   <span>john.doe@gmail.com</span>
                 </div>
 

@@ -42,19 +42,19 @@ const MentionsLegales = () => {
                 <div className="accordion-body">
                   <h3 className="h5 fw-bold mb-3">John Doe</h3>
                   <p className="mb-1">
-                    <i className="fas fa-map-marker-alt me-2 text-primary"></i>
+                    <i className="bi bi-geo-alt me-2"></i>
                     40 rue Laure Diebold
                   </p>
                   <p className="mb-2">
-                    <i className="fas fa-location-dot me-2 text-primary" style={{ opacity: 0 }}></i>
+                    <i className="bi bi-geo-alt me-2" style={{ opacity: 0 }}></i>
                     69009 Lyon, France
                   </p>
                   <p className="mb-2">
-                    <i className="fas fa-phone me-2 text-primary"></i>
+                    <i className="bi bi-phone me-2"></i>
                     10 20 30 40 50
                   </p>
                   <p className="mb-0">
-                    <i className="fas fa-envelope me-2 text-primary"></i>
+                    <i className="bi bi-envelope-at me-2"></i>
                     john.doe@gmail.com
                   </p>
                 </div>
@@ -87,7 +87,7 @@ const MentionsLegales = () => {
                     91 Rue du Faubourg Saint-Honoré, 75008 Paris
                   </p>
                   <p className="mb-0">
-                    <i className="fas fa-globe me-2 text-primary"></i>
+                    <i className="bi bi-globe me-2"></i>
                     <a
                       href="https://www.alwaysdata.com"
                       target="_blank"

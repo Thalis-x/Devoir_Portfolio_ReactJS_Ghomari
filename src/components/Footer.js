@@ -23,7 +23,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="me-2"
               >
-                <i className="fab fa-github fa-lg"></i>
+                <i className="bi bi-github"></i>
               </a>
               <a
                 href="https://twitter.com"
@@ -31,14 +31,14 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="me-2"
               >
-                <i className="fab fa-twitter fa-lg"></i>
+                <i className="bi bi-twitter"></i>
               </a>
               <a
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-linkedin fa-lg"></i>
+                <i className="bi bi-linkedin"></i>
               </a>
             </div>
           </div>

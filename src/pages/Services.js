@@ -51,7 +51,7 @@ const Services = () => {
               <div className="service-card card h-100 border-0 shadow-sm">
                 <div className="card-body text-center p-4">
                   <div className="service-icon mb-4">
-                    <i className="fas fa-pen-nib fa-3x text-primary"></i>
+                    <i className="bi bi-brush text-primary"></i>
                   </div>
                   <h3 className="card-title h4 mb-3">UX Design</h3>
                   <p className="card-text text-muted">
@@ -70,7 +70,7 @@ const Services = () => {
               <div className="service-card card h-100 border-0 shadow-sm">
                 <div className="card-body text-center p-4">
                   <div className="service-icon mb-4">
-                    <i className="fas fa-code fa-3x text-primary"></i>
+                    <i className="bi bi-code-slash text-primary"></i>
                   </div>
                   <h3 className="card-title h4 mb-3">Développement web</h3>
                   <p className="card-text text-muted">
@@ -88,7 +88,7 @@ const Services = () => {
               <div className="service-card card h-100 border-0 shadow-sm">
                 <div className="card-body text-center p-4">
                   <div className="service-icon mb-4">
-                    <i className="fas fa-search fa-3x text-primary"></i>
+                    <i className="bi bi-search text-primary"></i>
                   </div>
                   <h3 className="card-title h4 mb-3">Référencement</h3>
                   <p className="card-text text-muted">

@@ -110,7 +110,7 @@ footer a:hover {
   display: inline-block;
   transition: transform 0.3s ease;
   /* tailles des icones */
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .social-icons a:hover {
@@ -145,6 +145,7 @@ footer a:hover {
 /* Icônes des services */
 .service-icon {
   transition: transform 0.3s ease;
+  
   
 }
 
@@ -185,6 +186,10 @@ footer a:hover {
     height: 3px;
   }
 
+/* Taille des icônes Bootstrap Icons */
+.service-icon i {
+  font-size: 3rem;
+}
   /* ============================================
                   PAGE PORTFOLIO 
 ============================================ */
@@ -319,7 +324,7 @@ footer a:hover {
 
 .contact-info-item i {
   width: 20px;
-  font-size: 1rem;
+  font-size: 1rem; /* Taille des icônes Bootstrap Icons */
 }
 
 /* Éléments cliquables pour copier */
@@ -347,12 +352,12 @@ footer a:hover {
             PAGE MENTIONS LÉGALES
 ============================================ */
 
-/* Accordéon personnalisé */
+/* Accordéon personnalisé taille */
 .accordion {
   max-width: 900px;
   margin: 0 auto;
 }
-
+/* tout le systeme d'accordeon */
 .accordion-item {
   border: 1px solid rgba(0, 0, 0, 0.125);
   margin-bottom: 0.5rem;
@@ -382,14 +387,14 @@ footer a:hover {
 .accordion-button::after {
   background-size: 1.25rem;
 }
-
+/* contenue de chaque accordeon */
 .accordion-body {
   padding: 1.5rem 1.25rem;
   background-color: #ffffff;
 }
 
 .accordion-body h3 {
-  color: #212529;
+  color: #2b455f;
 }
 
 .accordion-body p {
@@ -401,14 +406,15 @@ footer a:hover {
 .accordion-body a {
   text-decoration: none;
   transition: all 0.2s ease;
+  text-decoration: underline;
 }
 /* lien surligner */
 .accordion-body a:hover {
-  text-decoration: underline;
 }
 
 .accordion-body i {
   width: 20px;
+  font-size: 1rem; /* Taille des icônes Bootstrap Icons */
 }
 /* ============================================
             MODALE GITHUB
