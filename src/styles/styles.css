@@ -408,9 +408,6 @@ footer a:hover {
   transition: all 0.2s ease;
   text-decoration: underline;
 }
-/* lien surligner */
-.accordion-body a:hover {
-}
 
 .accordion-body i {
   width: 20px;
