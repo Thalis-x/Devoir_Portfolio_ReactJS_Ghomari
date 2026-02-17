@@ -164,7 +164,7 @@ const Home = () => {
                 {/* Bouton Fermer en bas */}
                 <div className="text-end mt-4">
                   <button
-                    className="btn btn-secondary"
+                    className="btn btn-secondary btn-sm"
                     onClick={handleCloseModal}
                   >
                     Fermer

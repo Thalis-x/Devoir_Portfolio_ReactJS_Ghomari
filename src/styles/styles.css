@@ -407,15 +407,16 @@ footer a:hover {
 
 /* Contenu de la modale */
 .github-modal-content {
-  background-color: #2d333b; /* Fond sombre comme GitHub */
+  background-color: #191a1d; /* Fond sombre comme GitHub */
   border-radius: 0.5rem;
   padding: 2rem;
-  max-width: 600px;
+  max-width: 700px;
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
   position: relative;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  border: 1px solid #444c56;
 }
 
 /* Bouton fermer (X) */
@@ -430,8 +431,8 @@ footer a:hover {
   line-height: 1;
   cursor: pointer;
   padding: 0;
-  width: 32px;
-  height: 32px;
+  width: 20px;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -447,7 +448,7 @@ footer a:hover {
 /* Titre de la modale */
 .github-modal-title {
   color: #adbac7;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
@@ -463,7 +464,7 @@ footer a:hover {
 .github-profile-layout {
   display: flex;
   gap: 2rem;
-  align-items: flex-start;
+  align-items:center;
 }
 
 /* Container de l'avatar */
@@ -473,10 +474,8 @@ footer a:hover {
 
 /* Avatar GitHub */
 .github-avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid #444c56;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
 }
 
@@ -542,6 +541,12 @@ footer a:hover {
 .spinner-border.text-light {
   color: #adbac7 !important;
 }
+/* ligne separation au dessus de fermer */
+.text-end {
+  border-top: 1px solid #444c56;
+  margin: 0 -2rem; /* Étend jusqu'aux bords de la modale */
+  padding: 1rem 2rem 0; /* Espace entre la ligne et le bouton */
+}
 
 /* Animation d'entrée modale */
 @keyframes fadeIn {
@@ -563,11 +568,9 @@ footer a:hover {
     opacity: 1;
   }
 }
-
 .github-modal-overlay {
   animation: fadeIn 0.2s ease;
 }
-
 .github-modal-content {
   animation: slideUp 0.3s ease;
 }
@@ -589,11 +592,9 @@ footer a:hover {
   body {
     padding-top: 56px;
   }
-  
   .hero-section h1 {
     font-size: 2rem;
   }
-  
   .hero-section h2 {
     font-size: 1.5rem;
   }
@@ -601,21 +602,16 @@ footer a:hover {
     width: 100px;
   }
 }
-
  /* Services responsive mobile home */
   .hero-banner {
     min-height: 20vh !important;
   }
-  
   .display-5 {
     font-size: 2rem;
   }
-  
-  
   .service-card .card-body {
     padding: 2rem !important;
   }
-
   /* Responsive contact */
 @media (max-width: 991px) {
   .contact-info-section {
@@ -625,18 +621,15 @@ footer a:hover {
     max-width: 100%; /*Pleine largeur sur mobile*/
   }
 }
-
 /* Responsive page Mentions légales */
 @media (max-width: 768px) {
   .accordion {
     max-width: 100%;
   }
-  
   .accordion-button {
     font-size: 1rem;
     padding: 0.875rem 1rem;
   }
-  
   .accordion-body {
     padding: 1.25rem 1rem;
   }
@@ -647,7 +640,6 @@ footer a:hover {
     padding: 1.5rem;
     max-height: 85vh;
   }
-
   .github-modal-title {
     font-size: 1.25rem;
   }
@@ -656,7 +648,6 @@ footer a:hover {
     flex-direction: column;
     gap: 1.5rem;
   }
-
   .github-avatar-container {
     align-self: center;
   }
@@ -664,7 +655,6 @@ footer a:hover {
     width: 120px;
     height: 120px;
   }
-
   .github-info-item {
     font-size: 0.9rem;
     padding: 0.5rem 0;

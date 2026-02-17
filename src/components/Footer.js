@@ -17,7 +17,7 @@ const Footer = () => {
             {/* Réseaux sociaux */}
             <div className="social-icons">
               <a
-                href="https://github.com"
+                href="https://github.com/github-john-doe"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="me-2"
