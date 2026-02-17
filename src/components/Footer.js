@@ -93,7 +93,7 @@ const Footer = () => {
             <ul className="list-unstyled">
               <li className="mb-2">
                 <Link
-                  to="/portfolio"
+                  to="/Portfolio"
                   className="text-white text-decoration-none"
                 >
                   Fresh Food
@@ -101,7 +101,7 @@ const Footer = () => {
               </li>
               <li className="mb-2">
                 <Link
-                  to="/portfolio"
+                  to="/Portfolio"
                   className="text-white text-decoration-none"
                 >
                   Restaurant Akira
@@ -109,7 +109,7 @@ const Footer = () => {
               </li>
               <li className="mb-2">
                 <Link
-                  to="/portfolio"
+                  to="/Portfolio"
                   className="text-white text-decoration-none"
                 >
                   Espace bien-être
@@ -117,7 +117,7 @@ const Footer = () => {
               </li>
               <li className="mb-2">
                 <Link
-                  to="/portfolio"
+                  to="/Portfolio"
                   className="text-white text-decoration-none"
                 >
                   SEO
@@ -125,7 +125,7 @@ const Footer = () => {
               </li>
               <li className="mb-2">
                 <Link
-                  to="/portfolio"
+                  to="/Portfolio"
                   className="text-white text-decoration-none"
                 >
                   Création d'une API
@@ -133,7 +133,7 @@ const Footer = () => {
               </li>
               <li className="mb-2">
                 <Link
-                  to="/portfolio"
+                  to="/Portfolio"
                   className="text-white text-decoration-none"
                 >
                   Maquette d'un site web
