@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -91,25 +92,58 @@ const Footer = () => {
             <h5 className="mb-3">Mes dernières réalisations</h5>
             <ul className="list-unstyled">
               <li className="mb-2">
-                <a href="https://www.google.com"  className="text-white text-decoration-none">
+                <Link
+                  to="/portfolio"
+                  className="text-white text-decoration-none"
+                >
                   Fresh Food
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a href="https://www.google.com"  className="text-white text-decoration-none">
+                <Link
+                  to="/portfolio"
+                  className="text-white text-decoration-none"
+                >
                   Restaurant Akira
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a href="https://www.google.com" className="text-white text-decoration-none">
+                <Link
+                  to="/portfolio"
+                  className="text-white text-decoration-none"
+                >
                   Espace bien-être
-                </a>
+                </Link>
+              </li>
+              <li className="mb-2">
+                <Link
+                  to="/portfolio"
+                  className="text-white text-decoration-none"
+                >
+                  SEO
+                </Link>
+              </li>
+              <li className="mb-2">
+                <Link
+                  to="/portfolio"
+                  className="text-white text-decoration-none"
+                >
+                  Création d'une API
+                </Link>
+              </li>
+              <li className="mb-2">
+                <Link
+                  to="/portfolio"
+                  className="text-white text-decoration-none"
+                >
+                  Maquette d'un site web
+                </Link>
               </li>
             </ul>
           </div>
         </div>
 
-       {/* Copyright comment l'appliquer
+        {/* Copyright comment l'appliquer
         <div className="row mt-3">
           <div className="col text-center">
             <p className="mb-0">

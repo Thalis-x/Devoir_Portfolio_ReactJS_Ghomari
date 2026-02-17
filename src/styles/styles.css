@@ -1,3 +1,22 @@
+/* ============================================
+   POLICE GLOBALE - Nunito Sans
+============================================ */
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400; /* Corps du texte */
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600; /* Titres */
+}
+/* Balises importantes en 600 */
+strong, b, th, label, .btn {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+}
+/* ============================================
+                 NAVBAR
+============================================ */
 /* Assurer que la navbar ne cache pas le contenu */
 body {
   padding-top: 56px; /* Hauteur de la navbar fixe */
@@ -31,6 +50,9 @@ body {
   color: #ffffff !important;
   text-decoration: underline ;
 }
+/* ============================================
+                 PAGE HOME
+============================================ */
 
 /* Hero Section */
 .hero-section h1 {
@@ -65,7 +87,9 @@ section h2 {
 .progress-bar {
   transition: width 1s ease-in-out;
 }
-
+/* ============================================
+                 FOOTER 
+============================================ */
 /* Footer */
 footer h5 {
   font-weight: bold;
@@ -576,7 +600,7 @@ footer a:hover {
 }
 
 /* ============================================
-   RESPONSIVE
+                  RESPONSIVE
 ============================================ */
 /* Responsive Services */
 @media (max-width: 991px) {
